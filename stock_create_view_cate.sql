@@ -1,0 +1,10 @@
+/**
+     * ID: cate
+     * Description: Category master table
+     */
+CREATE VIEW VS21 AS SELECT 
+/*板块ID*/ t0.CAID CAID , 
+/*板块名称*/ t0.CANAME CANAME , 
+/*类型*/ t0.CATYPE CATYPE , 
+/*总权重*/ t1.CAWEIGHT CAWEIGHT FROM FS21 t0
+LEFT JOIN (SELECT CSCAID CAID, SUM(CSWEIGHT) CAWEIGHT FROM FS22 GROUP BY CSCAID) t1 ON t1.CAID = t0.CAID;

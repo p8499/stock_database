@@ -1,0 +1,10 @@
+\i ./stock_create_view_exch.sql;
+\i ./stock_create_view_stck.sql;
+\i ./stock_create_view_trdt.sql;
+\i ./stock_create_view_fina.sql;
+\i ./stock_create_view_std1.sql;
+\i ./stock_create_view_mssg.sql;
+\i ./stock_create_view_cate.sql;
+\i ./stock_create_view_ctst.sql;
+\i ./stock_create_view_obup.sql;
+\i ./stock_create_view_favo.sql;

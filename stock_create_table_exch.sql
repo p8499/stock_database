@@ -1,0 +1,9 @@
+/**
+ * ID: exch
+ * Description: Exchange master table
+ */
+SET CLIENT_ENCODING = UTF8;
+CREATE TABLE FS01 ( 
+/*ID*/ EXID VARCHAR(4) , 
+/*名称*/ EXNAME VARCHAR(8) );
+ALTER TABLE FS01 ADD CONSTRAINT FS01_PRIMARY PRIMARY KEY ( EXID );

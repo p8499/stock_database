@@ -1,0 +1,10 @@
+\i ./stock_create_table_exch.sql;
+\i ./stock_create_table_stck.sql;
+\i ./stock_create_table_trdt.sql;
+\i ./stock_create_table_fina.sql;
+\i ./stock_create_table_std1.sql;
+\i ./stock_create_table_mssg.sql;
+\i ./stock_create_table_cate.sql;
+\i ./stock_create_table_ctst.sql;
+\i ./stock_create_table_obup.sql;
+\i ./stock_create_table_favo.sql;

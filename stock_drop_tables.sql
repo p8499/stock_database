@@ -1,0 +1,10 @@
+\i ./stock_drop_table_favo.sql;
+\i ./stock_drop_table_obup.sql;
+\i ./stock_drop_table_ctst.sql;
+\i ./stock_drop_table_cate.sql;
+\i ./stock_drop_table_mssg.sql;
+\i ./stock_drop_table_std1.sql;
+\i ./stock_drop_table_fina.sql;
+\i ./stock_drop_table_trdt.sql;
+\i ./stock_drop_table_stck.sql;
+\i ./stock_drop_table_exch.sql;

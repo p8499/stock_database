@@ -1,0 +1,43 @@
+/**
+ * ID: std1
+ * Description: Stock market data - daily
+ */
+SET CLIENT_ENCODING = UTF8;
+CREATE TABLE FM11 ( 
+/*ID*/ D1ID INTEGER , 
+/*证券代码*/ D1STID VARCHAR(16) , 
+/*交易日*/ D1DATE DATE , 
+/*开盘价*/ D1OPEN DECIMAL(10,2) , 
+/*收盘价*/ D1CLOSE DECIMAL(10,2) , 
+/*最高价*/ D1HIGH DECIMAL(10,2) , 
+/*最低价*/ D1LOW DECIMAL(10,2) , 
+/*成交量*/ D1VOLUME DECIMAL(18,2) , 
+/*成交额*/ D1AMOUNT DECIMAL(26,2) , 
+/*总股本*/ D1TOTALSHARE DECIMAL(18,2) , 
+/*流通股本*/ D1FLOWSHARE DECIMAL(18,2) , 
+/*复权因子*/ D1FACTOR DECIMAL(24,12) , 
+/*小单买入量*/ D1BUY1 DECIMAL(18,2) , 
+/*小单卖出量*/ D1SELL1 DECIMAL(18,2) , 
+/*中单买入量*/ D1BUY2 DECIMAL(18,2) , 
+/*中单卖出量*/ D1SELL2 DECIMAL(18,2) , 
+/*大单买入量*/ D1BUY3 DECIMAL(18,2) , 
+/*大单卖出量*/ D1SELL3 DECIMAL(18,2) , 
+/*超大单买入量*/ D1BUY4 DECIMAL(18,2) , 
+/*超大单卖出量*/ D1SELL4 DECIMAL(18,2) , 
+/*股东权益合计（不含少数股东权益）-自动*/ D1FINA DECIMAL(26,2) , 
+/*年化营业收入-自动*/ D1FIOIY DECIMAL(26,2) , 
+/*年化净利润-自动*/ D1FINPEY DECIMAL(26,2) , 
+/*年化经营活动产生的现金流量净额-自动*/ D1FIOCNY DECIMAL(26,2) , 
+/*每股净资产-自动*/ D1FINAPS DECIMAL(26,2) , 
+/*每股营业收入-自动*/ D1FIOIYPS DECIMAL(26,2) , 
+/*基本每股收益-自动*/ D1FINPEYPS DECIMAL(26,2) , 
+/*每股经营活动产生的现金流量净额-自动*/ D1FIOCNYPS DECIMAL(26,2
+) , 
+/*动态市净率-自动*/ D1PB DECIMAL(36,12) , 
+/*动态市销率-自动*/ D1PS DECIMAL(36,12) , 
+/*动态市盈率-自动*/ D1PE DECIMAL(36,12) , 
+/*动态市现率-自动*/ D1PCF DECIMAL(36,12) );
+ALTER TABLE FM11 ADD CONSTRAINT FM11_PRIMARY PRIMARY KEY ( D1ID );
+ALTER TABLE FM11 ADD CONSTRAINT FM11_UNIQUE_1 UNIQUE ( D1STID , D1DATE );
+ALTER TABLE FM11 ADD CONSTRAINT FM11_REFERENCE_1 FOREIGN KEY ( D1STID ) REFERENCES FS11 ( STID );
+CREATE SEQUENCE FM11_D1ID MINVALUE 0 START WITH 1;

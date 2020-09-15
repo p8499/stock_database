@@ -1,0 +1,7 @@
+/**
+ * ID: mssg
+ * Description: Message
+ */
+SET CLIENT_ENCODING = UTF8;
+DROP SEQUENCE FS13_MSID;
+DROP TABLE FS13;

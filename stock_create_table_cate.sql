@@ -1,0 +1,10 @@
+/**
+ * ID: cate
+ * Description: Category master table
+ */
+SET CLIENT_ENCODING = UTF8;
+CREATE TABLE FS21 ( 
+/*板块ID*/ CAID VARCHAR(32) , 
+/*板块名称*/ CANAME VARCHAR(64) , 
+/*类型*/ CATYPE VARCHAR(1) );
+ALTER TABLE FS21 ADD CONSTRAINT FS21_PRIMARY PRIMARY KEY ( CAID );
